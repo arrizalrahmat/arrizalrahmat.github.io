@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <img src="./assets/ironman.png" class="logo">
+    <title>How big of a geek are you?</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Pop Culture Trivia</h1>
+
+    <div class="quiz_wrapper" >
+      <div class="question" id="questionBox"></div>
+      <img src="https://i.kym-cdn.com/photos/images/original/000/205/855/noob.jpg" class="result" id="noob">
+      <img src="https://sunenglish.co.id/wp-content/uploads/2020/01/pop-culture.jpg" class="result" id="amazing">
+      <div class="options">
+        <ul id="optionlist">
+          <li id="option1" onclick="answerClick(this)"></li>
+          <li id="option2" onclick="answerClick(this)"></li>
+          <li id="option3" onclick="answerClick(this)"></li>
+          <li id="option4" onclick="answerClick(this)"></li>
+        </ul>
+      </div>
+      <div class="score">
+        <div class="next">
+          <button type="button" onclick="nextClick()" id="button">Next</button>
+        </div>
+        <div class="score-card">Score : <span id="scoreCard">0</span></div>
+      </div>
+    </div>
+
+    <script src="./js/indexproto.js"></script>
+    <script>
+      data();
+    </script>
+  </body>
+</html>
